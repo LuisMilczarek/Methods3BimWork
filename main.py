@@ -5,6 +5,7 @@ from interpolators import lagrange
 from regression import minSquares
 from integration import trapeze, oneThirdSimpson, threeOctSimpson
 from utils import report
+import os
 
 def do_report(data: dict) -> None:
     print("\nRelatório:")
@@ -146,5 +147,7 @@ def main2() -> None:
 
 
 if __name__ == "__main__":
+    if not os.path.exists("./graficos/"):
+        os.mkdir("./graficos/")
     main1()
     main2()
