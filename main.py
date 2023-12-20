@@ -22,6 +22,7 @@ def Et(t : float) -> float:
     return y
 
 def main1() -> None:
+    print("\n\nParte 1:\n\n")
     base_path = "./graficos"
     z = 25
     xi = [ 0,     10,   20,   30,   40,   50]
@@ -145,5 +146,5 @@ def main2() -> None:
 
 
 if __name__ == "__main__":
-    # main1()
+    main1()
     main2()
